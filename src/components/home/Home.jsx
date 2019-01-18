@@ -5,6 +5,7 @@ import imgETC from '../../images/ETC_icon.png'
 import imgEVG from '../../images/EVG_icon.png'
 import imgAVI from '../../images/AVI_icon.png'
 import imgPAC from '../../images/PAC_icon.png'
+import AboutCard from '../AboutCard';
 
 
 export default class Home extends Component {
@@ -17,12 +18,14 @@ export default class Home extends Component {
     const linkEVG = "/evg"
     const linkAVI = "/avi"
     const linkPAC = "/pac"
+    const descAbout = "Neology is a U.S. based high technology company headquartered in San Diego, California, with manufacturing facilities in the U.S. and Mexico City. Founded in 1986, our company has been a pioneer and leader in the development of passive Radio Frequency Identification (RFID) technology, owning some of the earliest and most significant intellectual property (IP) in the industry."
+    const linkAbout = "/about"
     return (
       <div className="home">
         <div>
           <Navbar />
           <div className="solutions-container">
-            <h1>Solutions</h1>
+            <h1>SOLUTIONS</h1>
             <div className="solution-cards-container">
               <SolutionCard img={imgETC} 
               title="Electronic Toll Collection" 
@@ -41,7 +44,15 @@ export default class Home extends Component {
               desription={descPAC} 
               link={linkPAC} />
             </div>
-           
+          </div>
+          <div>
+            <h1>ABOUT US</h1>
+            <div className="about-container">
+              <AboutCard 
+              title="LEADING THROUGH INNOVATION IS OUR PASSION" 
+              desription={descAbout}
+              link={linkAbout} />
+            </div>
           </div>
         </div>
       </div>

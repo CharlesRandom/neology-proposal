@@ -86,3 +86,24 @@ code {
   font-size: 14px;
   color: #4d4d4d;
 }
+
+.about-container {
+  width: 100%;
+}
+
+.about-card-container {
+  display: flex;
+}
+
+.about-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-video {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

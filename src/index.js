@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
 import 'antd/dist/antd.css'
+import "video-react/dist/video-react.css";
 
 const WithRouter = () => (
   <BrowserRouter><App/></BrowserRouter>
