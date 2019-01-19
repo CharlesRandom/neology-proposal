@@ -115,6 +115,10 @@ h1 {
   display: flex;
 }
 
+.about-card-container img {
+  max-height: 200px;
+}
+
 .about-info {
   width: 40%;
   display: flex;
@@ -152,7 +156,6 @@ h1 {
 
 .corpID-card {
   width: 33%;
-  width: 33%;
   background-image: url("https://www.arcbusinessinteriors.co.uk/wp-content/uploads/2018/06/SoftOfficeScene_1-300x300.jpg");
   background-position: center;
   background-size: cover;
@@ -161,4 +164,20 @@ h1 {
   align-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.subsidiaries-container {
+  margin:50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.where-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.where-card {
+  width: 25%;
 }

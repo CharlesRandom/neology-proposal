@@ -6,11 +6,20 @@ import imgPAC from '../../images/PAC_icon.png'
 import imgMision from '../../images/Mision_icon_orange.png'
 import imgVision from '../../images/Vision_icon_white.png'
 import imgValues from '../../images/Values_icon_orange.png'
+import imgProduct from '../../images/product.png'
+import imgControles from '../../images/LogoControles.png'
+import imgPIPS from '../../images/LogoPIPS.png'
+import imgNorthCarolina from '../../images/NorthCarolina.png'
+import imgAustin from '../../images/Austin.png'
+import imgAtlanta from '../../images/Atlanta.png'
+import imgMexico from '../../images/Mexico.png'
 import SolutionCard from '../SolutionCard';
 import AboutCard from '../AboutCard';
 import ProductsCard from '../ProductsCard';
 import PlayerCarousel from '../PlayerCarousel';
 import CorporateIdentityCard from '../CorporateIdentityCard';
+import SubsidiariesCard from '../SubsidiariesCard';
+import WhereCard from '../WhereCard';
 
 
 export default class Home extends Component {
@@ -84,7 +93,26 @@ export default class Home extends Component {
               <ProductsCard 
               title="READERS" 
               desription={descProducts}
-              link={linkProducts} />
+              link={linkProducts}
+              img={imgProduct} />
+            </div>
+          </div>
+          <div>
+            <h1>SUBSIDIARIES</h1>
+            <div className="subsidiaries-container">
+              <SubsidiariesCard 
+                img={imgControles} />
+              <SubsidiariesCard 
+                img={imgPIPS} />
+            </div>
+          </div>
+          <div>
+            <h1>WHERE WE ARE</h1>
+            <div className="where-container">
+              <WhereCard img={imgNorthCarolina} />
+              <WhereCard img={imgAustin} />
+              <WhereCard img={imgAtlanta} />
+              <WhereCard img={imgMexico} />
             </div>
           </div>
         </div>

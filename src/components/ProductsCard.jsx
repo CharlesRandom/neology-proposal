@@ -9,7 +9,7 @@ const ProductsCard = ({ title, desription, link, img }) => {
         <a href={link}>READ MORE</a>
       </div>
       <div className="about-video">
-        <img src={img} alt=""/>
+        <img src={img} alt="product pic"/>
       </div>
     </div>
   )
