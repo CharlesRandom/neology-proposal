@@ -1,8 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import AboutPlayer from './AboutPlayer';
 
-const AboutCard = ({ title, desription, link }) => {
+const ProductsCard = ({ title, desription, link, img }) => {
   return (
     <div className="about-card-container">
       <div className="about-info">
@@ -11,10 +9,10 @@ const AboutCard = ({ title, desription, link }) => {
         <a href={link}>READ MORE</a>
       </div>
       <div className="about-video">
-        <AboutPlayer />
+        <img src={img} alt=""/>
       </div>
     </div>
   )
 }
 
-export default AboutCard
+export default ProductsCard

@@ -1,11 +1,16 @@
 import React, { Component } from 'react'
-import Navbar from '../Navbar';
-import SolutionCard from '../SolutionCard';
 import imgETC from '../../images/ETC_icon.png'
 import imgEVG from '../../images/EVG_icon.png'
 import imgAVI from '../../images/AVI_icon.png'
 import imgPAC from '../../images/PAC_icon.png'
+import imgMision from '../../images/Mision_icon_orange.png'
+import imgVision from '../../images/Vision_icon_white.png'
+import imgValues from '../../images/Values_icon_orange.png'
+import SolutionCard from '../SolutionCard';
 import AboutCard from '../AboutCard';
+import ProductsCard from '../ProductsCard';
+import PlayerCarousel from '../PlayerCarousel';
+import CorporateIdentityCard from '../CorporateIdentityCard';
 
 
 export default class Home extends Component {
@@ -20,10 +25,15 @@ export default class Home extends Component {
     const linkPAC = "/pac"
     const descAbout = "Neology is a U.S. based high technology company headquartered in San Diego, California, with manufacturing facilities in the U.S. and Mexico City. Founded in 1986, our company has been a pioneer and leader in the development of passive Radio Frequency Identification (RFID) technology, owning some of the earliest and most significant intellectual property (IP) in the industry."
     const linkAbout = "/about"
+    const descVision = "We are passionate about offering efficient and innovative mobility solutions and automatic vehicle identification, through Radio Frequency Identification (RFID) technology, optical character recognition or artificial intelligence. All this VISION through products and services of excellence based on international standards, for the benefit of our customers, shareholders and collaborators."
+    const descProducts = "Neology is a U.S. based high technology company headquartered in San Diego, California, with manufacturing facilities in the U.S. and Mexico City. Founded in 1986, our company has been a pioneer and leader in the development of passive Radio Frequency Identification (RFID) technology, owning some of the earliest and most significant intellectual property (IP) in the industry."
+    const linkProducts = "/products"
     return (
       <div className="home">
         <div>
-          <Navbar />
+          <div className="carousel-container">
+            <PlayerCarousel />
+          </div>
           <div className="solutions-container">
             <h1>SOLUTIONS</h1>
             <div className="solution-cards-container">
@@ -52,6 +62,29 @@ export default class Home extends Component {
               title="LEADING THROUGH INNOVATION IS OUR PASSION" 
               desription={descAbout}
               link={linkAbout} />
+            </div>
+          </div>
+          <div className="corpID-container">
+            <CorporateIdentityCard 
+              img={imgMision}
+              title="Mision"
+              description="Holi" />
+            <CorporateIdentityCard 
+              img={imgVision}
+              title="Vision"
+              description={descVision} />
+            <CorporateIdentityCard 
+              img={imgValues}
+              title="Values"
+              description="Holi" />
+          </div>
+          <div>
+            <h1>PRODUCTS</h1>
+            <div className="about-container">
+              <ProductsCard 
+              title="READERS" 
+              desription={descProducts}
+              link={linkProducts} />
             </div>
           </div>
         </div>
