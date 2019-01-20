@@ -20,6 +20,7 @@ import PlayerCarousel from '../PlayerCarousel';
 import CorporateIdentityCard from '../CorporateIdentityCard';
 import SubsidiariesCard from '../SubsidiariesCard';
 import WhereCard from '../WhereCard';
+import BlogPost from '../BlogPost';
 
 
 export default class Home extends Component {
@@ -109,11 +110,23 @@ export default class Home extends Component {
           <div>
             <h1>WHERE WE ARE</h1>
             <div className="where-container">
-              <WhereCard img={imgNorthCarolina} />
-              <WhereCard img={imgAustin} />
-              <WhereCard img={imgAtlanta} />
-              <WhereCard img={imgMexico} />
+              <img className="where-card" src={imgNorthCarolina} alt="North Carolina"/>
+              <img className="where-card" src={imgAustin} alt="Austin"/>
+              <img className="where-card" src={imgAtlanta} alt="Atlanta"/>
+              <img className="where-card" src={imgMexico} alt="Mexico"/>
             </div>
+          </div>
+          <div className="blog-container">
+            <BlogPost 
+              title="Francisco Martinez de Velasco Visits Neology Offices in Mexico City." 
+              desription={descProducts}
+              link={linkProducts}
+              img={imgProduct} />
+            <BlogPost 
+              title="Neology P397 Camera Increases Safety in the UK." 
+              desription={descProducts}
+              link={linkProducts}
+              img={imgProduct} />
           </div>
         </div>
       </div>

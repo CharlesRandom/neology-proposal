@@ -176,8 +176,20 @@ h1 {
 .where-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .where-card {
-  width: 25%;
+  flex: 25%;
+  max-width: 25%;
+  max-height: 200px;
+}
+
+.where-card img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.blog-container {
+  display: flex;
 }
